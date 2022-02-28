@@ -13,6 +13,12 @@ engine = create_engine(DATABASE_URI)
 
 
 def check_if_valid_data(df: pd.DataFrame) -> bool:
+    """
+    This function checks if DataFrame have valid data in it. 1) Check if DataFrame is empty,
+    2) Check if any primary key is repeated or not. 3) Check if the data have any null value.
+    4) Verify if the data extracted comes from the last 24 hours.
+    :param df: This is the dataframe to be checked
+    """
     # Check if dataframe is empty
     if df.empty:
         print('No songs were downloaded, Finishing execution')
@@ -59,6 +65,7 @@ if __name__ == '__main__':
             break
 
         with open('./misc/token.txt', 'w') as file:
+            # TODO: Obtain a new token automatically from Spotify API webpage
             TOKEN = input('Please write a new token')
             file.write(TOKEN)
             headers = {
