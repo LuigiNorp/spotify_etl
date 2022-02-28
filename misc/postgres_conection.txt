@@ -1,0 +1,1 @@
+postgresql://ing.jlllopezp:cortometraje@localhost:5432/spotify_etl
