@@ -1,0 +1,26 @@
+{
+    "sourceFile": "docker/pgadmin/Dockerfile",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1646294186424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1646464734397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n FROM dpage/pgadmin4\n \n COPY config/servers.json /pgadmin4/servers.json\n-COPY sql/ /var/lib/pgadmin/storage/luigi_norp/\n+COPY sql/ /var/lib/pgadmin/storage/admin_example.com/\n \n # the following commands are used for debug purposes only\n USER root\n RUN apk add bash curl jq vim\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1646502337175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n FROM dpage/pgadmin4\n \n COPY config/servers.json /pgadmin4/servers.json\n-COPY sql/ /var/lib/pgadmin/storage/admin_example.com/\n+COPY sql/ /var/lib/pgadmin/storage/ing.jlllopezp_gmail.com/\n \n # the following commands are used for debug purposes only\n USER root\n RUN apk add bash curl jq vim\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1646294186424,
+            "name": "Commit-0",
+            "content": "FROM dpage/pgadmin4\n\nCOPY config/servers.json /pgadmin4/servers.json\nCOPY sql/ /var/lib/pgadmin/storage/luigi_norp/\n\n# the following commands are used for debug purposes only\nUSER root\nRUN apk add bash curl jq vim"
+        }
+    ]
+}

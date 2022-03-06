@@ -1,0 +1,18 @@
+{
+    "sourceFile": "misc/postgres_conection.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1646526582386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1646526582385,
+            "name": "Commit-0",
+            "content": "postgresql://airflow@localhost:5432/airflow"
+        }
+    ]
+}

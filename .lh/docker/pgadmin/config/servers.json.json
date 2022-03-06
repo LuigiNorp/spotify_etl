@@ -1,0 +1,22 @@
+{
+    "sourceFile": "docker/pgadmin/config/servers.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1646503072727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1646506080755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n {\n   \"Servers\": {\n     \"1\": {\n-      \"Name\": \"spotify_etl\",\n+      \"Name\": \"airflow\",\n       \"Group\": \"Servers\",\n       \"Host\": \"postgres\",\n       \"Port\": \"5432\",\n       \"MaintenanceDB\": \"postgres\",\n"
+                }
+            ],
+            "date": 1646503072727,
+            "name": "Commit-0",
+            "content": "{\n  \"Servers\": {\n    \"1\": {\n      \"Name\": \"spotify_etl\",\n      \"Group\": \"Servers\",\n      \"Host\": \"postgres\",\n      \"Port\": \"5432\",\n      \"MaintenanceDB\": \"postgres\",\n      \"Username\": \"airflow\",\n      \"SSLMode\": \"prefer\",\n      \"PassFile\": \"/pgpassfile\"\n    }\n  }\n}"
+        }
+    ]
+}
